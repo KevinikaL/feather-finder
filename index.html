@@ -7,8 +7,63 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
   </head>
   <body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+          <a href="#find-a-bird">Find a Bird</a>
+          <a href="#bird-guide">Bird Guide</a>
+          <a href="#about">About</a>
+        </nav>
+      </header>
     <main>
+        <!-- Hero section -->
+     <section id="hero"></section>
       <h1>Feather Finder</h1>
+      <p>
+        A beginner bird watcher needs a simple way to identify a bird they see
+        because they may not know the bird's name or species. My page will let
+        them choose a bird's primary color and show matching birds with
+        information to help identify it.
+      </p>
+    </section>
+   <!-- Bird search section -->
+      <section id="find-a-bird">
+  <h2>What Bird Did You See?</h2>
+
+  <p>Find birds based on what you noticed.</p>
+
+ <!-- User types the bird's color here -->
+  <label for="bird-color">What color was it?</label>
+
+  <input
+    id="bird-color"
+    type="text"
+    placeholder="Type a bird color"
+  >
+<!-- Search button  -->
+  <button id="search-button" type="button">Search</button>
+</section>
+
+    <!-- Bird results will show here -->
+<section id="possible-matches">
+    <h2>Possible Matches</h2>
+    <p>Your bird matches will appear here.</p>
+  </section>
+
+   <!-- Bird information section -->
+  <section id="bird-guide">
+    <h2>Bird Guide</h2>
+    <p>
+      Learn more about the birds you find, including their diet
+      and where they can be found.
+    </p>
+  </section>
+
+   <!-- Information about the dataset -->
+  <section id="about">
+    <h2>About the Data</h2>
+    <p>Feather Finder uses the 100 Birds of the World dataset.</p>
+  </section>
     </main>
   </body>
 </html>

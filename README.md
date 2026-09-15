@@ -8,9 +8,28 @@ The purpose of the Feather Finder is to help people quickly identify birds and l
 
 A beginner bird watcher needs a simple way to identify a bird they see because they may not know the bird's name or species. My page will let them choose a bird's primary color and show matching birds with information to help identify it.
 
+## The plan
+
+![My wireframe](wireframe.png)
+
+### Sections
+
+- **Find a Bird** — a visitor can search for a bird using its primary color.
+- **Possible Matches** — shows the birds that match the visitor's search.
+- **Bird Guide** — shows more information about the birds, including their diet and range.
+- **About the Data** — explains the dataset used for Feather Finder.
+
+### User input
+
+- A visitor types a bird's primary color and the page shows birds that match their search.
+
+### Outputs
+
+Each result shows `Name`, `Primary Color`, and `Image of Bird`.
+
 ## Data
 
-100 Birds of the World.csv
+birds
 
 | Field | Example Value |
 | --- | --- |
