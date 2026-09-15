@@ -31,5 +31,5 @@ A beginner bird watcher needs a simple way to identify a bird they see because t
 
 ## Links
 
-- Live: your-live-link
-- Repo: your-repo-link
+- Live: https://kevinikal.github.io/feather-finder/
+- Repo: https://github.com/KevinikaL/feather-finder.git
