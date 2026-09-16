@@ -1,0 +1,16 @@
+/* loader.css — a spinner for while something is loading. */
+
+.loader {
+    width: 32px;
+    height: 32px;
+    border: 4px solid var(--pico-muted-border-color, #e7eaf0);
+    border-top-color: var(--pico-primary, #2563eb);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }

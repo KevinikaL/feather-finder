@@ -4,11 +4,16 @@ let birdColor = document.getElementById("bird-color");
 // Find the Search button on the HTML page
 let searchButton = document.getElementById("search-button");
 
+// Find the loading spinner on the page
+let loader = document.getElementById("loader");
+
 
 // This function searches the bird API
 // "color" will hold whatever color the visitor typed
 async function searchBirds(color) {
-
+ 
+    // Show the loading spinner
+  loader.hidden = false;
   // Send a request to my birds API
   // The visitor's color is added to the search parameter
   let response = await fetch(
@@ -24,6 +29,9 @@ async function searchBirds(color) {
 
   // Show how many bird records came back
   console.log("Records: " + data.records.length);
+
+ // Hide the loading spinner because the data arrived
+  loader.hidden = true;
 
 
   // Find the results area on the HTML page
