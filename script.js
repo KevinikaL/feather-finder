@@ -1,7 +1,6 @@
 // Find the input, button, and results on the page
 let birdColor = document.getElementById("bird-color");
 let searchButton = document.getElementById("search-button");
-let results = document.getElementById("results");
 
 async function searchBirds(color) {
     let response = await fetch(
@@ -13,10 +12,19 @@ async function searchBirds(color) {
     let data = await response.json();
   
     console.log("Records: " + data.records.length);
+   
+    let text = "";
+
+    data.records.forEach(function (record) {
+      text = text + "• " + record.Name +
+        " — Primary Color: " + record["Primary Color"] + " ";
+    });
+    
+    document.getElementById("results-list").textContent = text;
   }
 
 // Listen for the Search button to be clicked
-searchButton.addEventListener("click", function () {
+ searchButton.addEventListener("click", function () {
 
   // Get what the visitor typed
   let color = birdColor.value;
