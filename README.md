@@ -12,6 +12,10 @@ A beginner bird watcher needs a simple way to identify a bird they see because t
 
 ![My wireframe](wireframe.png)
 
+## What changed
+
+My page is still pretty close to my original plan. The search works and shows matching birds from my API. I learned that searching by color can also bring back birds with other primary colors because the API searches the whole record. I still want to add bird images and make the results easier to look through.
+
 ### Sections
 
 - **Find a Bird** — a visitor can search for a bird using its primary color.
