@@ -16,6 +16,10 @@ A beginner bird watcher needs a simple way to identify a bird they see because t
 
 My page is still pretty close to my original plan. The search works and shows matching birds from my API. I learned that searching by color can also bring back birds with other primary colors because the API searches the whole record. I still want to add bird images and make the results easier to look through.
 
+## How the request reaches my API
+
+A visitor types a bird color into the search box and clicks the Search button. The color is added to my API address using the search parameter, like `/api/v1/datasets/birds/records?search=red`. My API sends back the bird records that match the search, and Feather Finder shows those results on the page as bird cards with the bird's image, name, and primary color. The request goes through my own API, and there is no API key in my page.
+
 ### Sections
 
 - **Find a Bird** — a visitor can search for a bird using its primary color.
