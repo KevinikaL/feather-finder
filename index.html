@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Feather Finder</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/card-grid.css">
+    <link rel="stylesheet" href="css/card-parts.css">
   </head>
   <body>
     <!-- Navigation -->
@@ -48,7 +51,8 @@
 <section id="possible-matches">
     <h2>Possible Matches</h2>
 
-    <p id="results-list"></p>
+    <!-- JavaScript will put the bird cards inside this div -->
+  <div id="results-list" class="card-grid"></div>
   </section>
 
    <!-- Bird information section -->

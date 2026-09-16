@@ -1,0 +1,11 @@
+/* card-parts.css — the heading and the paragraph inside a card. */
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    color: var(--pico-muted-color, #6b7280);
+    font-size: 0.9em;
+  }
