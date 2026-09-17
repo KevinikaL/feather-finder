@@ -1,0 +1,245 @@
+/* style.css — custom styles for Feather Finder */
+
+
+/* ---------- PAGE BACKGROUND ---------- */
+
+body {
+    background-image:
+      linear-gradient(
+        rgba(20, 50, 25, 0.12),
+        rgba(20, 50, 25, 0.12)
+      ),
+      url("../images/leafy-background.jpg");
+  
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  
+  
+  /* ---------- NAVIGATION ---------- */
+  
+  header {
+    background-color: rgba(255, 255, 245, 0.88);
+    border-radius: 18px;
+    padding: 12px 32px;
+    margin: 16px auto;
+    max-width: 1400px;
+  }
+  
+  /* Keep all three navigation links together */
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+  
+  /* Style the navigation links */
+  nav a {
+    color: #183d2b;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  /* Underline a navigation link when hovering */
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* ---------- MAIN PAGE ---------- */
+  
+  main {
+    max-width: 1400px;
+    margin: auto;
+  }
+  
+  
+  /* ---------- HERO ---------- */
+  
+  #hero {
+    background-color: rgba(255, 255, 245, 0.88);
+    border-radius: 24px;
+    padding: 32px;
+    margin: 48px auto 24px;
+    max-width: 700px;
+    text-align: center;
+  }
+  
+  /* Main Feather Finder title */
+  #hero h1 {
+    color: #183d2b;
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+  
+  /* Hero description */
+  #hero p {
+    color: #294d39;
+  }
+  
+  
+  /* ---------- BIRD SEARCH ---------- */
+  
+  #find-a-bird {
+    background-color: rgba(255, 255, 245, 0.90);
+    border-radius: 22px;
+    padding: 24px;
+    max-width: 700px;
+    margin: 24px auto 32px;
+  }
+  
+  /* Search section heading */
+  #find-a-bird h2 {
+    color: #183d2b;
+  }
+  
+  /* Search button */
+  #search-button {
+    background-color: #24583d;
+    border-color: #24583d;
+  }
+  
+  /* Search button when hovering */
+  #search-button:hover {
+    background-color: #183d2b;
+    border-color: #183d2b;
+  }
+  
+  
+  /* ---------- POSSIBLE MATCHES ---------- */
+  
+  #possible-matches {
+    background-color: rgba(255, 255, 245, 0.82);
+    border-radius: 24px;
+    padding: 24px;
+    margin: 32px auto;
+  }
+  
+  /* Possible Matches heading */
+  #possible-matches h2 {
+    color: #183d2b;
+    text-align: center;
+  }
+  
+  
+  /* ---------- BIRD CARDS ---------- */
+  
+  .card {
+    background-color: rgba(255, 255, 250, 0.95);
+    border-radius: 18px;
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  /* Bird image */
+  .card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Bird name */
+  .card h3 {
+    color: #183d2b;
+    padding: 16px 16px 0;
+    margin-bottom: 4px;
+  }
+  
+  /* Bird information */
+  .card p {
+    padding: 0 16px 16px;
+  }
+  
+  
+  /* ---------- LOADER ---------- */
+  
+  /* Center the loading spinner */
+  .loader {
+    margin: 20px auto;
+  }
+  
+  
+  /* ---------- BIRD GUIDE ---------- */
+  
+  #bird-guide {
+    background-color: rgba(255, 255, 245, 0.90);
+    border-radius: 22px;
+    padding: 32px;
+    margin: 32px auto;
+  }
+  
+  #bird-guide h2 {
+    color: #183d2b;
+  }
+  
+  
+  /* ---------- ABOUT ---------- */
+  
+  #about {
+    background-color: rgba(255, 255, 245, 0.90);
+    border-radius: 22px;
+    padding: 32px;
+    margin: 32px auto 64px;
+  }
+  
+  #about h2 {
+    color: #183d2b;
+  }
+  
+  
+  /* ---------- PHONE SIZE ---------- */
+  
+  @media (max-width: 700px) {
+  
+    /* Let the background move normally on smaller screens */
+    body {
+      background-attachment: scroll;
+    }
+  
+    /* Give the navigation room around the edges */
+    header {
+      margin: 8px;
+      padding: 12px;
+    }
+  
+    /* Stack navigation links on a phone */
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+  
+    /* Add a little space around the main content */
+    main {
+      padding: 12px;
+    }
+  
+    /* Move the hero closer to the navigation */
+    #hero {
+      margin-top: 16px;
+      padding: 24px;
+    }
+  
+    /* Make the title fit smaller screens */
+    #hero h1 {
+      font-size: 35px;
+    }
+  
+    /* Reduce section padding on smaller screens */
+    #find-a-bird,
+    #possible-matches,
+    #bird-guide,
+    #about {
+      padding: 16px;
+    }
+  
+    /* Make bird images slightly shorter on phones */
+    .card img {
+      height: 200px;
+    }
+  }
