@@ -53,6 +53,7 @@
     <!-- Bird results will show here -->
 <section id="possible-matches">
     <h2>Possible Matches</h2>
+    <h3>Click a bird card to see more information below.</h3>
 
      <!-- Loading spinner -->
   <div id="loader" class="loader" hidden></div>
@@ -62,13 +63,31 @@
   </section>
 
    <!-- Bird information section -->
-  <section id="bird-guide">
-    <h2>Bird Guide</h2>
-    <p>
-      Learn more about the birds you find, including their diet
-      and where they can be found.
-    </p>
-  </section>
+  <!-- Shows more information about the bird the visitor clicks -->
+<section id="bird-guide">
+
+  <h2>Bird Guide</h2>
+
+  <!-- Shows a larger photo of the selected bird -->
+ <img id="guide-bird-image" alt="Selected bird" hidden>
+
+  <!-- This changes to the bird's name -->
+  <h3 id="guide-name">Click a bird above to learn more.</h3>
+
+  <!-- Scientific name -->
+  <p id="guide-scientific-name"></p>
+
+  <!-- Diet -->
+  <p id="guide-diet"></p>
+
+  <!-- Conservation status -->
+  <p id="guide-conservation"></p>
+
+  <!-- Range map -->
+  <p id="range-title"></p>
+  <img id="guide-range" alt="Bird range map" hidden>
+
+</section>
 
    <!-- Information about the dataset -->
   <section id="about">
