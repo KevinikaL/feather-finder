@@ -56,6 +56,10 @@ birds
 2. What do different bird species eat?
 3. Where in the world can different birds be found?
 
+## Reflection
+
+I planned to create Feather Finder as a simple way for beginner bird watchers to search for birds by their primary color. The final page lets users search by color, view possible matches, and click a bird to see more information in the Bird Guide. My plan changed as I worked because I added details like bird images, diet, conservation status, range maps, and interactive features to make the page easier and more useful to explore. 
+
 ## Links
 
 - Live: https://kevinikal.github.io/feather-finder/
